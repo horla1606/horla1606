@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micheal Olamilekan Samson | Data Analyst</title>
+    <title>Michael Olamilekan Samson | Data Analyst</title>
     <style>
         /* Basic styling - you can customize this */
         body {
@@ -24,19 +24,22 @@
             margin-bottom: 40px;
         }
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
+            object-fit: cover;
             border: 5px solid white;
             margin-bottom: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
         h1 {
-            margin: 0;
+            margin: 10px 0;
             font-size: 2.5em;
         }
         .tagline {
             font-size: 1.2em;
             opacity: 0.9;
+            margin-bottom: 10px;
         }
         section {
             background: white;
@@ -67,11 +70,20 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap;
         }
         .contact-links a {
             color: #667eea;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        .contact-links a:hover {
+            background: #667eea;
+            color: white;
         }
         footer {
             text-align: center;
@@ -79,12 +91,31 @@
             padding: 20px;
             color: #666;
         }
+        .dashboard-img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .img-grid {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .img-grid img {
+            flex: 1;
+            min-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- <C:\Users\HP\Desktop> -->
-        <!-- <https://i.imgur.com/thC9Wfm.jpeg" alt="Micheal Olamilekan" class="profile-img"> -->
+        <!-- PROFILE PICTURE -->
+        <img src="profile.jpg" alt="Michael Olamilekan" class="profile-img">
+        
         <h1>Michael Olamilekan Samson</h1>
         <p class="tagline">Data Analyst | Business Intelligence Specialist | Problem Solver</p>
         <p>Transforming complex data into actionable business insights</p>
@@ -97,17 +128,33 @@
 
     <section id="featured-project">
         <h2>Featured Project: MyGym Fitness Analytics</h2>
+        
+        <!-- MAIN DASHBOARD IMAGE -->
+        <div style="text-align: center;">
+            <img src="dashboard1.png" alt="MyGym Dashboard Overview" class="dashboard-img">
+            <p style="font-style: italic; color: #666; margin-top: 5px;">Main dashboard showing key metrics and KPIs</p>
+        </div>
+        
         <div class="project">
             <h3>📊 Business Impact Dashboard</h3>
             <p>Comprehensive Power BI dashboard analyzing 3K+ gym members across 10 locations. Reduced churn by 44% and increased revenue per member by 22%.</p>
+            
             <p><strong>Key Achievements:</strong></p>
             <ul>
                 <li>Developed predictive churn model with 85% accuracy</li>
                 <li>Identified $36K in member upgrade opportunities</li>
                 <li>Optimized staff scheduling, saving 8% in operational costs</li>
             </ul>
-            <div class="project-links">
-                <a href="https://github.com/yourusername/MyGym-Fitness-Analytical-Report" target="_blank">View Code on GitHub</a> | 
+            
+            <!-- ADDITIONAL DASHBOARD IMAGES -->
+            <h4 style="margin-top: 30px;">Dashboard Details:</h4>
+            <div class="img-grid">
+                <img src="dashboard2.png" alt="Member Analytics">
+                <img src="dashboard3.png" alt="Revenue Analysis">
+            </div>
+            
+            <div class="project-links" style="margin-top: 30px;">
+                <a href="https://github.com/horla1606/MyGym-Fitness-Analytical-Report" target="_blank">View Code on GitHub</a> | 
                 <a href="https://medium.com/@horla1/unlocking-member-value-and-driving-growth-a-data-driven-analysis-of-mygyms-membership-retention-f9a734628f11" target="_blank">Read Analysis on Medium</a>
             </div>
         </div>
@@ -143,6 +190,9 @@
     <footer>
         <p>© 2024 Michael Olamilekan Samson. All rights reserved.</p>
         <p>This portfolio is built with GitHub Pages.</p>
+    </footer>
+</body>
+</html>        <p>This portfolio is built with GitHub Pages.</p>
     </footer>
 </body>
 </html>
